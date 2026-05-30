@@ -1,0 +1,10 @@
+{
+    "name": "hexlet/code",
+    "authors": [
+        {
+            "name": "Stepan Kormilin",
+            "email": "ubscoder@gmail.com"
+        }
+    ],
+    "require": {}
+}
