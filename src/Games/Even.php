@@ -4,9 +4,10 @@ namespace BrainGames\Games\Even;
 
 use function BrainGames\Engine\run;
 
+use const BrainGames\Engine\MAX_NUMBER;
+use const BrainGames\Engine\MIN_NUMBER;
+
 const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
-const MIN_NUMBER = 1;
-const MAX_NUMBER = 100;
 
 function isEven(int $number): bool
 {

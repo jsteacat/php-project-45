@@ -1,0 +1,47 @@
+#!/usr/bin/expect -f
+# Demo for brain-calc: successful game, then wrong answer
+
+set timeout 10
+set script [file normalize [info script]]
+set dir [file dirname [file dirname $script]]
+cd $dir
+
+proc play_correct_rounds {n} {
+    for {set i 0} {$i < $n} {incr i} {
+        expect -re {Question: ([^\r\n]+)}
+        set expr [string trim $expect_out(1,string)]
+        set answer [expr $expr]
+        expect "Your answer:"
+        send -- "$answer\r"
+        expect "Correct!"
+    }
+}
+
+log_user 0
+spawn ./bin/brain-calc
+log_user 1
+expect "May I have your name?"
+send -- "Tirion\r"
+expect "What is the result of the expression?"
+play_correct_rounds 3
+expect -re {Congratulations, Tirion!}
+expect eof
+wait
+
+sleep 1
+
+log_user 0
+spawn ./bin/brain-calc
+log_user 1
+expect "May I have your name?"
+send -- "Tirion\r"
+expect "What is the result of the expression?"
+expect -re {Question: ([^\r\n]+)}
+set expr [string trim $expect_out(1,string)]
+set correct [expr $expr]
+set wrong [expr {$correct + 1}]
+expect "Your answer:"
+send -- "$wrong\r"
+expect -re {Let's try again, Tirion!}
+expect eof
+wait
