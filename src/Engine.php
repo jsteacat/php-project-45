@@ -4,16 +4,13 @@ namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\Cli\greetUser;
 
-const ROUNDS_COUNT = 3;
-const MIN_NUMBER = 1;
-const MAX_NUMBER = 100;
+use const BrainGames\Constants\ROUNDS_COUNT;
 
 function run(string $description, callable $generateRound): void
 {
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    $name = greetUser();
     line($description);
 
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {

@@ -4,8 +4,8 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\run;
 
-use const BrainGames\Engine\MAX_NUMBER;
-use const BrainGames\Engine\MIN_NUMBER;
+use const BrainGames\Constants\MAX_NUMBER;
+use const BrainGames\Constants\MIN_NUMBER;
 
 const DESCRIPTION = 'What number is missing in the progression?';
 const LENGTH = 10;
