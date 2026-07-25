@@ -16,7 +16,8 @@
             "src/Engine.php",
             "src/Games/Even.php",
             "src/Games/Calc.php",
-            "src/Games/GCD.php"
+            "src/Games/GCD.php",
+            "src/Games/Progression.php"
         ],
         "psr-4": {
             "BrainGames\\": "src"
@@ -26,8 +27,10 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
+
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0"
     }

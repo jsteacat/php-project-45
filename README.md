@@ -9,6 +9,9 @@ brain-calc:
 brain-gcd:
 [![asciicast](https://asciinema.org/a/nXzyyNlMHFxoB8yt.svg)](https://asciinema.org/a/nXzyyNlMHFxoB8yt)
 
+brain-progression:
+[![asciicast](https://asciinema.org/a/Sxi6PkZJ9Vy7nNNi.svg)](https://asciinema.org/a/Sxi6PkZJ9Vy7nNNi)
+
 ### Tests and linter status:
 
 [![Actions Status](https://github.com/jsteacat/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/jsteacat/php-project-45/actions)
