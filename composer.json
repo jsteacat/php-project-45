@@ -12,12 +12,17 @@
         "wp-cli/php-cli-tools": "^0.13"
     },
     "autoload": {
+        "files": [
+            "src/Engine.php",
+            "src/Games/Even.php"
+        ],
         "psr-4": {
             "BrainGames\\": "src"
         }
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0"

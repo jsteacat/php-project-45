@@ -1,3 +1,7 @@
+### Demo
+
+[![asciicast](https://asciinema.org/a/OXsVIVOsmICo42hq.svg)](https://asciinema.org/a/OXsVIVOsmICo42hq)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/jsteacat/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/jsteacat/php-project-45/actions)
 
