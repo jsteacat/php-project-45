@@ -8,10 +8,11 @@ use const BrainGames\Engine\MAX_NUMBER;
 use const BrainGames\Engine\MIN_NUMBER;
 
 const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
+const EVEN_DIVISOR = 2;
 
 function isEven(int $number): bool
 {
-    return $number % 2 === 0;
+    return $number % EVEN_DIVISOR === 0;
 }
 
 function play(): void
